@@ -1,0 +1,283 @@
+/* 
+    font-family: 'Lora', 'serif';
+    font-family: 'Ubuntu', 'sans-serif';
+*/
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', 'sans-serif';
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #1792D2;
+    font-weight: bolder;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', 'serif';
+    font-weight: 400;
+    color: #143774;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3.375rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #1792D2;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792D2;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.article-title {
+    font-size: 2.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: #1792D2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+.widget-title,
+.widget-recent-post {
+    font-size: 1rem;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', 'sans-seriff';
+    font-weight: 700;
+}
+
+.article-info {
+    margin: 2em 0;
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    max-width: 2000px;
+    margin: 0 auto;
+    /* border: 1px solid magenta; */
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+header {
+    background: #F8F8F8;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+footer {
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+@media (min-width: 950px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        /* border: 1px solid orange; */
+        width: 75%;
+    }
+
+    aside {
+        width: 20%;
+        min-width: 250px;
+        margin-left: 1em;
+    }
+}
+
+/* Navigation */
+
+nav {
+    padding-top: .5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792D2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 950px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+.article-feature {
+    border-bottom: #707070 1px solid;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+
+@media (min-width: 650px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    }
+
+    .article-feature {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image {
+        order: -2;
+    }
+
+    .article-info {
+        order: -1;
+    }
+}
+
+.sidebar-widget {
+    border: 20px solid #efefef;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    margin: 0;
+    border: 0;
+}
+
+
+.widget-image {
+    order: -1;
+}
+
+.widget-recent-post-title {
+    color: #143774;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.img-full {
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 17%;
+}
